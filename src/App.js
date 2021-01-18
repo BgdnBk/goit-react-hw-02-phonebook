@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Form from "./components/Form/Form";
 import Filter from './components/Filter/Filter'
-import СontactList from "./components/ContactForm/ContactForm"
+import СontactForm from "./components/ContactForm/ContactForm"
 import s from './components/ContactForm/ContactForm.module.css'
 import './App.css';
 
@@ -58,7 +58,7 @@ export default class Mobile extends Component {
           velue={this.state.filter}
           SearchContact={this.veluesFilter}
         />
-        <СontactList
+        <СontactForm
           contactList={filterContact}
           onDeleted={this.deletedContact}
         />

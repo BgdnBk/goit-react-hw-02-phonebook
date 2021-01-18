@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import s from '../ContactForm/ContactForm.module.css';
 
 
-export default function СontactList({ contactList, onDeleted }) {
+export default function СontactForm({ contactList, onDeleted }) {
   return (
     <ul className='table'>
       {contactList.map(({ id, name, number }) => {
@@ -24,7 +24,7 @@ export default function СontactList({ contactList, onDeleted }) {
   );
 }
 
-СontactList.propTypes = {
+СontactForm.propTypes = {
   contactList: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
